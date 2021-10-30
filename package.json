@@ -1,0 +1,14 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "dongsheng",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.7.0"
+  }
+}
