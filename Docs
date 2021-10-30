@@ -1,0 +1,21 @@
+0. Verifying if Sign up button is informative, clickable.
+1. Verifying if an account could be generated after input username, password.
+2. Verifying if the input username, password is already existed in the DB, the sign up page will remind the user the user is already exist. 
+3. Verifying if with no username and no password to sign up, the site will remind the user to fill the username and password. 
+4. Verifying if the username/password is valid when charater is more than or equals to 1.
+5. Verifying if log in button is informative, clickable.
+6. Verifying if we use a different username and password to log in, the website will remind user does not exist.
+7. Verifying if we only enter username without password, the website will remind please fill out Username and Password.
+8. Verifying if previously logged user admin/admin could be used to log in after clicking log in button.
+9. Verifying after log in admin/admin, the sign up button will change into a welcome "username" a tag.
+10. Verifying if we could successfully log out the website after clicking on log out button. 
+11. Verifying if we could click product in the index page, and add to cart button is clickable and informative.
+12. Verifying the add to cart button is increased by 1 after each clicking through viewing the cart.
+13. Verifying if we could delete a product from order list.
+14. Verifying if we could place order after fill out the form after clicking the button place order in the cart page.
+15. Verifying if a receipt will be generated after clicking the button place order.
+
+
+
+Bugs:
+1. Could place order without adding any product after fill out the place order form.
