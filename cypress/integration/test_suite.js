@@ -6,8 +6,8 @@ describe("test demo blaze app", () => {
   });
 
   it("display login page", () => {
-    cy.get("#signin2").should("have.text", "Sign up");
-    cy.get("#login2")
+    cy.get("[data-target='#signInModal']").should("have.text", "Sign up");
+    cy.get("[data-target='#logInModal']")
       .contains("Log in")
       .click();
     cy.wait(1000);
@@ -21,11 +21,12 @@ describe("test demo blaze app", () => {
     cy.get("#logout2")
       .contains("Log out")
       .click();
-    cy.get("#signin2").should("have.text", "Sign up");
+    cy.wait(1000);
+    cy.get("[data-target='#signInModal']").should("have.text", "Sign up");
   });
 
   it("start purchasing", () => {
-    cy.get("#login2")
+    cy.get("[data-target='#logInModal']")
       .contains("Log in")
       .click();
     cy.wait(1000);
@@ -56,7 +57,7 @@ describe("test demo blaze app", () => {
   });
 
   it("start to place order", () => {
-    cy.get("#login2")
+    cy.get("[data-target='#logInModal']")
       .contains("Log in")
       .click();
     cy.wait(1000);
@@ -79,7 +80,7 @@ describe("test demo blaze app", () => {
     cy.get("#month").type("01");
     cy.get("#year").type("2021");
     cy.contains("Purchase").click();
-    cy.get(".sweet-alert")
+    cy.get("[data-custom-class]")
       .find("h2")
       .should("have.text", "Thank you for your purchase!");
   });
